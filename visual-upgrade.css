@@ -1,0 +1,36 @@
+html { background: #fbf4ee; }
+body::before { position: absolute; background: url("assets/wolu-world.webp") 53% center / cover no-repeat; }
+body::after { position: absolute; }
+body::after { background: linear-gradient(to bottom, rgba(252,246,240,.74), rgba(252,246,240,.66) 40%, rgba(252,246,240,.78)); }
+main { width: min(100% - 28px, 620px); padding-top: 14px; }
+.brand { overflow: hidden; border-radius: 160px 160px 12px 12px / 35px 35px 12px 12px; background: radial-gradient(ellipse at center, #fff8efe6, #fff8ef80 60%, transparent 85%); }
+.hero-art { display: block; width: 100%; height: auto; mask-image: linear-gradient(to bottom, #000 72%, transparent); }
+h1 { font-size: 29px; color: #815523; margin-top: 4px; }
+.core-message { margin-top: 10px; font-size: 22px; }
+.message { margin: 10px 10px 13px; color: #654631; }
+.signature { margin-bottom: 12px; }
+.hero-scene { display: block; width: 100%; height: auto; mask-image: linear-gradient(to bottom, transparent, #000 18%, #000 86%, transparent); }
+#official-links { padding: 28px 8px 0; }
+h2 { background: transparent; box-shadow: none; color: #856848; }
+nav { gap: 12px; }
+nav a { border-radius: 30px; min-height: 62px; border-color: #c9a478; background: linear-gradient(115deg, #fffcf5e8, #fceae7d9, #fffaf4e8); box-shadow: inset 0 0 0 3px #fff9f57d, 0 4px 15px #a4796420; font-family: "Palatino Linotype", Georgia, "Yu Mincho", serif; font-size: 17px; padding: 14px 20px; color: #684a37; }
+nav a > span:not(.arrow) { flex: 1; }
+.butterfly-icon { width: 30px; height: 30px; flex: 0 0 30px; fill: #f5e5de; stroke: #a48255; stroke-width: .85; stroke-linecap: round; stroke-linejoin: round; }
+.wing-detail { fill: none; stroke: #c5ab98; stroke-width: .6; }
+.butterfly-body { fill: none; stroke: #947044; }
+footer { margin-inline: 8px; border-top-color: #d4b18a; }
+.wolu-icon { flex: 0 0 34px; width: 34px; height: 34px; overflow: visible; }
+.pearl-halo { fill: #fff9f1; stroke: #d6bc9c; stroke-width: .65; }
+.motif { fill: #f4e7df; stroke: #9a754b; stroke-width: .8; stroke-linecap: round; stroke-linejoin: round; }
+.pearl-point { fill: #fffdf8; stroke: #c7a984; stroke-width: .4; }
+nav a { position: relative; border-color: #caaa82; background: radial-gradient(ellipse at 13% 30%, #fffef7f5, transparent 45%), linear-gradient(110deg, #fff8efe8, #f5e1e4e6 65%, #fcf3e9eb); box-shadow: inset 0 0 0 3px #fffaf280, 0 3px 18px #a57e6824, 0 0 22px #fff3db70; gap: 12px; }
+nav a::after { content: ""; position: absolute; right: 48px; top: 11px; width: 30px; height: 36px; pointer-events: none; opacity: .45; background: radial-gradient(ellipse at 50% 35%, #e6bbc8 0 11%, transparent 13%), radial-gradient(ellipse at 27% 49%, #e6bbc8 0 11%, transparent 13%), radial-gradient(ellipse at 73% 49%, #e6bbc8 0 11%, transparent 13%), radial-gradient(ellipse at 37% 68%, #e6bbc8 0 11%, transparent 13%), radial-gradient(ellipse at 63% 68%, #e6bbc8 0 11%, transparent 13%); }
+nav a:hover { background-color: #fffaf3; border-color: #9a754b; }
+h2 { font-family: "Palatino Linotype", Georgia, "Yu Mincho", serif; font-size: 12px; font-weight: 400; letter-spacing: .13em; margin-bottom: 18px; color: #765536; }
+h2::before, h2::after { height: 6px; background: linear-gradient(to right, transparent, #c5a77f, transparent) center / 100% 1px no-repeat, radial-gradient(circle, #fff9ee 0 1px, #c5a77f 1.2px 2px, transparent 2.2px) center / 6px 6px no-repeat; }
+.links-ornament { text-align: center; margin: -7px 0 15px; }
+.blessing-ornament { width: 92px; height: 28px; fill: #fff8ef; stroke: #b38d5b; stroke-width: .65; stroke-linecap: round; }
+footer { border-top: 0; padding: 14px 10px 20px; background: radial-gradient(ellipse, #fff8eac7, transparent 75%); }
+footer .blessing-ornament { display: block; margin: 0 auto 14px; }
+@media (min-width: 601px) { main { padding-top: 24px; } h1 { font-size: 36px; } .core-message { font-size: 24px; } .message { font-size: 18px; } }
+@media (max-width: 600px) { body::after { background: linear-gradient(to bottom, rgba(252,246,240,.74), rgba(252,246,240,.66) 40%, rgba(252,246,240,.78)); } small { margin-left: 4px; font-size: 11px; } }

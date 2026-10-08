@@ -1,0 +1,24 @@
+html { background: #fff6ed; }
+body::before, body::after { display: none; }
+main { width: min(100%, 720px); padding: 0; overflow: hidden; background: #fff6ed; }
+.brand { position: relative; border-radius: 0; overflow: hidden; background: none; box-shadow: none; }
+.continuous-hero { width: 100%; height: auto; display: block; mask-image: linear-gradient(to bottom, #000 96%, transparent); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; margin: 0; padding: 0; }
+.lower-world { position: relative; isolation: isolate; margin-top: -3%; padding: 5px 0 25px; background: linear-gradient(to bottom, #fff6ed00, #fff5ed18), url("assets/scene-water.webp") center / cover no-repeat; }
+.lower-world::before, .lower-world::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: -1; }
+.lower-world::before { background: url("assets/scene-left.webp") left center / 24% 100% no-repeat, url("assets/scene-right.webp") right center / 24% 100% no-repeat; mask-image: linear-gradient(to right, #000, #000 12%, transparent 30%, transparent 70%, #000 88%, #000); }
+.lower-world::after { background: radial-gradient(ellipse at center, #fff8ed55, #fff8ed00 75%); }
+#official-links { width: 82%; max-width: 560px; margin: auto; padding: 10px 0 0; }
+.links-ornament { display: none; }
+h2 { font-size: 10px; margin: 0 0 13px; color: #77502e; text-shadow: 0 1px 8px #fffdf8; }
+section + section { margin-top: 23px; }
+nav { gap: 11px; }
+nav a { min-height: 62px; padding: 12px 16px; gap: 9px; border: 1px solid #c89b68; background: linear-gradient(115deg, #fffaf0e8, #fae4e0cf 65%, #fff8ebd9); box-shadow: inset 0 0 0 3px #fffaf299, 0 0 13px #fff2dc, 0 3px 10px #aa745326; color: #694123; font-size: 17px; }
+.wolu-icon { width: 32px; height: 32px; flex-basis: 32px; }
+.service-icon { width: 32px; height: 32px; flex: 0 0 32px; border-radius: 50%; object-fit: contain; }
+.link-sparkle { width: 16px; height: 16px; flex: 0 0 16px; margin-left: 1px; margin-right: 0; }
+small { font-size: 11px; margin-left: 4px; }
+nav a::after { content: none; }
+footer { margin: 28px auto 0; width: 88%; background: radial-gradient(ellipse, #fff7e8c9, #fff7e800 75%); color: #754c2d; }
+@media (min-width: 601px) { main { margin: auto; } h2 { font-size: 12px; } nav a { min-height: 72px; font-size: 21px; } small { font-size: 14px; } }
+@media (max-width: 340px) { #official-links { width: 89%; } nav a { font-size: 15px; padding-inline: 12px; } small { font-size: 10px; } }
